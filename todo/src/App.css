@@ -1,0 +1,35 @@
+/* *{
+  margin: 0;
+  padding: 0;
+}
+
+.heading{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 2px 2px 8px red;
+  font-family: cursive;
+  padding-top: 30px;
+}
+
+.innerDiv{
+  text-align: center;
+  height: auto;
+  background-color: black;
+}
+
+.image{
+  border-radius: 10px;
+  margin-top: 130px;
+  margin-bottom: 70px;
+  width: 500px;
+  box-shadow: 0px 0px 20px 5px red;
+}
+
+.class-component-heading, .function-component-heading {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  background-color: black;
+}   
+   */
