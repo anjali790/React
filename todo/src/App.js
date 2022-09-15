@@ -1,8 +1,9 @@
 import './App.css';
 // import { WelcomeFn } from './components/WelcomeFn';
 // import { WelcomeClass } from './components/WelcomeClass';
-import { Toggle } from './components/Toggle';
-import './components/Toggle.css';
+// import { Toggle } from './components/Toggle';
+// import './components/Toggle.css';
+import {Count} from './components/Count';
 
 
 export function App() {
@@ -15,7 +16,8 @@ export function App() {
 
       {/* <WelcomeFn /> */}
       {/* <WelcomeClass /> */}
-      <Toggle />
+      {/* <Toggle /> */}
+      <Count />
     </div>
   );
 }
