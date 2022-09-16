@@ -1,29 +1,25 @@
-// import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
-import { Toggle } from './Toggle';
+// import { Toggle } from './Toggle';
+import { Header } from './components/Header';
+import { Main } from './components/Main';
 
+export default class App extends Component {
+  constructor(props) {
+    super(props);
 
-function App() {
-  return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <Toggle /> 
+    this.state = { name: 'React' };
+  }
 
-  );
+  render() {
+    return (
+      <>
+        <Header name={this.state.name} />
+        <Main paraNo={1}/>
+        <Main paraNo={2}/>
+        <Main paraNo={3}/>
+        <Main paraNo={4}/>
+      </>
+      )
+  }
 }
-
-export default App;
