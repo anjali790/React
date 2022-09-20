@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0px;
+    color: azure;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+main{
+    background-color: lightsalmon;
+    color:rgb(18, 98, 99);
+}
+
+.para{
+    margin: 10px 20px;
+}
+
+.btn{
+    margin: 10px 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
