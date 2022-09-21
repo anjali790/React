@@ -160,7 +160,7 @@ body {
 	color: #0b4b54;
 	font-size: 35px;
 	font-weight: bolder;
-	margin-top: 35px;
+	margin-top: 28px;
 }
 
 .usernameDiv,
@@ -175,12 +175,14 @@ body {
 	font-size: 20px;
 	margin: 0px 10px;
 	outline-style: none;
+	padding: 5px 0px;
 }
 
 .passwordDiv label, .inputPassword{
 	font-size: 20px;
 	margin: 0px 10px;
 	outline-style: none;
+	padding: 5px 0px;
 }
 
 .btnDiv .btn{
