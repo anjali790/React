@@ -142,6 +142,8 @@ header {
     padding: 10px 20%;
     border-bottom: 1px solid rgba(219, 219, 219, 1);
     background-color: white;
+    position: sticky;
+    top: 0;
 }
 
 .right {
@@ -230,7 +232,7 @@ section {
 
 .story1 p {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
