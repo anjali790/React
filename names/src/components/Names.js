@@ -30,11 +30,12 @@ export class Names extends Component {
             <>
             {this.props.children}
             {this.props.children}
-            {/* this.state.names.map((personNames)=>(
+
+
+            {this.state.names.map((personNames)=>(
                 <p key={personNames.id}>{personNames.name} {personNames.id}</p>
-            )) */}
+            ))}
             </>
         )
-
     }
 }
