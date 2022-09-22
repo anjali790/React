@@ -5,18 +5,32 @@ export class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: "Anjali",
-            password: 1234,
+            username: "",
+            password: "",
         }
     }
 
-    handleClick = () =>{
-        if(this.state.username === this.target.value && this.state.password === this.target.value && this.state.value.length <=8){
-            alert('Login Successfully');
-        }else{
-            alert('Invalid details');
-        }
+
+    handleEmail = (event) =>{
+        console.log(event.target.value);
+        this.setState({
+            username :event.target.value,
+        });
+    };
+
+    handlePassword = (event) =>{
+        console.log(event.target.value);
+        this.setState({ 
+            password: event.target.value,
+        });
+    };
+
+    handleSubmit = (event) =>{
+        event.preventDefault();
+        console.log(this.state.username, this.state.password);
     }
+
+
 
     render() {
         return (
@@ -26,15 +40,15 @@ export class Login extends Component {
                         <fieldset>
                             <h1>Login Form</h1>
                             <div className="usernameDiv">
-                                <label for="username" className="input">username*</label>
-                                <input type="text" placeholder="enter username" className="inputName input" required></input>
+                                <label htmlFor="username" className="input">username* :</label>
+                                <input type="text" placeholder="enter username" className="inputName input" id="username" onChange={this.handleEmail} value={this.state.username} required></input>
                             </div>
                             <div className="passwordDiv">
-                                <label for="password" className="input">password*</label>
-                                <input type="text" placeholder="enter password" className="inputPassword input" required></input>
+                                <label htmlFor="password" className="input">password* :</label>
+                                <input type="text" placeholder="enter password" className="inputPassword input" id="password" onChange={this.handlePassword} value={this.state.password} required></input>
                             </div>
                             <div className="btnDiv">
-                                <button className="btn" onClick={this.handleClick}>Login</button>
+                                <button className="btn" onChange={this.handleSubmit}>Login</button>
                             </div>
                         </fieldset>
                     </form>

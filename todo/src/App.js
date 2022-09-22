@@ -3,13 +3,9 @@ import './App.css';
 // import { WelcomeClass } from './components/WelcomeClass';
 // import { Toggle } from './components/Toggle';
 // import './components/Toggle.css';
-<<<<<<< HEAD
 // import {Count} from './components/Count';
 import {Login} from './components/Login';
-
-=======
 import {Count} from './components/Count';
->>>>>>> d71c78cc669ef59d4b0ed639a4f8b2ca8874d3e1
 
 
 export function App() {
@@ -23,12 +19,8 @@ export function App() {
       {/* <WelcomeFn /> */}
       {/* <WelcomeClass /> */}
       {/* <Toggle /> */}
-<<<<<<< HEAD
-      {/* <Count /> */}
-      <Login/>
-=======
       <Count />
->>>>>>> d71c78cc669ef59d4b0ed639a4f8b2ca8874d3e1
+      <Login/>
     </div>
   );
 }
