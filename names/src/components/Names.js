@@ -1,10 +1,10 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
-export class Names extends Component{
-    constructor(props){
+export class Names extends Component {
+    constructor(props) {
         super(props);
         this.state = {
-            names : [
+            names: [
                 {
                     id: 1,
                     name: 'shubro',
@@ -24,13 +24,17 @@ export class Names extends Component{
             ],
         };
     }
-    render(){
-        return(
-            // <>
-            this.state.names.map((personNames)=>(
+    render() {
+        console.log(this.props.children);
+        return (
+            <>
+            {this.props.children}
+            {this.props.children}
+            {/* this.state.names.map((personNames)=>(
                 <p key={personNames.id}>{personNames.name} {personNames.id}</p>
-            ))
-            // </>
-        );
+            )) */}
+            </>
+        )
+
     }
 }
