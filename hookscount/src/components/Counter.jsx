@@ -9,16 +9,35 @@ export function Counter() {
 
     const handleName = () => {
         if (name !== 'Anjali') {
-            setName(name.toLocaleUpperCase());
+            setName(name.toUpperCase());
         };
     };
+
+
+    const handleIncrement = (step) =>{
+        setCounter(counter + step);
+    }
+
+    const handleDecrement = (num) =>{
+        setCounter(counter - num);
+    }
+
+    // const handleIncrementByFive = () =>{
+    //     setCounter(counter+1);
+    //     setCounter(counter+1);
+    //     setCounter(counter+1);
+    //     setCounter(counter+1);
+    //     setCounter(counter+1);
+    // }
 
     return (
         <>
             <p>{counter}</p>
             <p>My name is {name}</p>
-            <button onClick={() => setCounter(counter + 1)}>Increment</button>
-            <button onClick={() => setCounter(counter - 1)}>Decrement</button>
+            <p></p>
+            <button onClick = {() => setCounter(counter +1 )}>increment</button>
+            <button onClick={() => handleIncrement(5)}>Increment</button>
+            <button onClick={() => handleDecrement(2)}>Decrement</button>
             <button onClick={() => setCounter(Initial_Count)}>Reset</button>
             {/* <button onClick = {()=> setName(name.toLocaleUpperCase())}>Capatalize</button>
         <button onClick = {()=>{
@@ -27,6 +46,7 @@ export function Counter() {
             }
         }}>Condition Capatalize</button> */}
             <button onClick={handleName}>capatalize</button>
+            {/* <button onClick={handleIncrementByFive}>increment by 5</button> */}
         </>
     )
 };
