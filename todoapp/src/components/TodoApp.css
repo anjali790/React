@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container .inputBox {
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    margin-right: 30px;
+}
+
+.container .addBtn {
+    font-size: 20px;
+    padding: 5px 7px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .addTodoDiv {
+    margin-top: 15px;
+}
+
+.container .addTodoDiv .newTodo {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.container .addTodoDiv .editBtn, .deleteBtn{
+    font-size: 20px;
+    padding: 5px 7px;
+    /* background-color: black; */
+    border: none;
+    color: white;
+    margin: 0px 5px;
+}
+
+.container .addTodoDiv .editBtn{
+    background-color: blue;
+}
+
+.container .addTodoDiv .deleteBtn{
+    background-color: red;
+}
+
+
+
+
