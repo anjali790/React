@@ -19,7 +19,7 @@ export default function TodoApp() {
       {items.map(item =>
         <>
           <div className='addTodoDiv'>
-            <span className='newTodo'>{item}</span>
+            <p className='newTodo'>{item}</p>
             <button className='editBtn'>Edit</button>
             <button className='deleteBtn' onClick={() => {
               let filteredItems = items.filter((value) => value !== item);
