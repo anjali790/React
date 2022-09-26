@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, whitesmoke, rgb(52, 112, 130), black);
+}
+
+
+/*---------------------Header----------------*/
+header {
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgb(33, 94, 112);
+    box-shadow: 3px 3px 3px black;
+    margin-bottom: 32px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .h1 {
+    height: 70px;
+    text-shadow: 2px 2px 8px #000000;
+    font-size: 53px;
+    margin: auto 0;
+    padding: 5px 0px;
+}
+
+header p {
+    font-size: 62px;
+    color: black;
+    margin: auto 0;
+    padding: 5px 0px;
+}
+
+
+/*---------------------Main----------------*/
+main .container {
+    display: flex;
+}
+
+main .container .form {
+    margin-left: 20px;
+}
+
+main .container .form .input,
+.btn {
+    border: none;
+    margin: 0 5px;
+    line-height: 1.5;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-family: cursive;
+}
+
+main .container .form .input {
+    outline: none;
+    width: 300px;
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+main .container .form .btn {
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: whitesmoke;
+    background: linear-gradient(to right, #0c0c0d 5%, chartreuse, #0c0c0d 100%);
+}
+
+main .container .form .btn:hover {
+    transform: scale(1.1);
+}
+
+.displayDiv .userName {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.displayDiv {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.displayDiv .displayInnerDiv {
+    margin: 10px auto;
+}
+
+.displayDiv .bio {
+    margin-bottom: 5px;
+}
+
+.displayDiv .bio span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.displayDiv img {
+    border-radius: 50%;
+}
