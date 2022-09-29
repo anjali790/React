@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import './TodoApp.css';
 
 export default function TodoApp() {
-  const [items, setItems] = useState([]);
+  const [task, setTask] = useState([]);
   const [todo, setTodo] = useState('');
-  // const [edit, setEdit] = useState(null);
 
   const addItem = () => {
-    setItems([...items, todo]);
+    setTask([...task, todo]);
     setTodo('');
   };
 
@@ -16,14 +15,14 @@ export default function TodoApp() {
       <h1>Todo App</h1>
       <input className='inputBox' type="text" placeholder='enter todo here' value={todo} onChange={(e) => setTodo(e.target.value)}></input>
       <button className='addBtn' onClick={addItem}>Add Todo</button>
-      {items.map(item =>
+      {task.map(item =>
         <>
           <div className='addTodoDiv'>
-            <p className='newTodo'>{item}</p>
+            <p className='newTodo'>{task}</p>
             <button className='editBtn'>Edit</button>
             <button className='deleteBtn' onClick={() => {
-              let filteredItems = items.filter((value) => value !== item);
-              setItems([...filteredItems]);
+              let filteredItems = task.filter((value) => value !== item);
+              setTask([...filteredItems]);
             }}>Delete</button>
           </div>
         </>
