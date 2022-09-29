@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './GitHub.css';
 import { FaGithub } from "react-icons/fa";
-import {FaUserFriends} from "react-icons/fa"
+import { FaUserFriends } from "react-icons/fa"
 
 export default class GitHub extends Component {
     constructor(props) {
@@ -30,7 +30,7 @@ export default class GitHub extends Component {
                 <div className="App">
                     <header>
                         <h1 className="h1">github user search app</h1>
-                        <p><FaGithub/></p>
+                        <p><FaGithub /></p>
                     </header>
                     <main>
                         <div className="container">
@@ -45,7 +45,7 @@ export default class GitHub extends Component {
                         <div className="displayDiv">
                             <h1 className="userName">{data.name}</h1>
                             <div className="displayInnerDiv">
-                                <p><span><FaUserFriends/></span>  {data.followers} <span>followers . {data.following} following</span></p>
+                                <p><span><FaUserFriends /></span>  {data.followers} <span>followers . {data.following} following</span></p>
                             </div>
                             <p className="bio"><span>Bio: </span> {data.bio}</p>
                             <img src={data.avatar_url} alt=""></img>
