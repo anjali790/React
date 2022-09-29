@@ -1,11 +1,11 @@
 import React from 'react';
 import { ComponentB } from './ComponentB'
 
-export default function ComponentA(props) {
+export function ComponentA() {
     return (
         <>
             <div>ComponentA</div>
-            <ComponentB name={props.name}/>
+            <ComponentB />
         </>
     )
 }

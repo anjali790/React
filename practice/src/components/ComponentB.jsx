@@ -1,11 +1,13 @@
-import React from 'react';
-import {ComponentC} from './ComponentC';
+import React, {useContext} from 'react';
+import { ComponentC } from './ComponentC';
+import { PlaceContext } from '../App';
 
-export function ComponentB(props) {
-  return (
-    <>
-     <div>ComponentB</div>
-     <ComponentC name={props.name}/>
-    </>
+export function ComponentB() {
+    const place = useContext(PlaceContext);
+    return (
+        <>
+            <div>ComponentB - {place}</div>
+            <ComponentC />
+        </>
     )
 }

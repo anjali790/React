@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react';
+import { NameContext } from '../App';
+import { BranchContext } from '../App';
 
-export function ComponentC(props) {
+export function ComponentC() {
+    const name = useContext(NameContext);
+    const branch = useContext(BranchContext);
   return (
-    <div>ComponentC- {props.name}</div>
+    <>
+    <div>ComponentC - My name is {name}. and my branch is {branch}.</div>
+    </>
   )
 }
