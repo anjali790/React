@@ -4,7 +4,8 @@ import axios from "axios";
 export default function Test() {
     const [posts, setPosts] = useState([]);
     const [filterComment, setFilterComment] = useState([]);
-    const [serach, setSearch] = useState("");
+    const [search, setSearch] = useState("");
+    const [buttonId, setButtonId] = useState(1);
 
 
     useEffect(() => {
@@ -19,21 +20,26 @@ export default function Test() {
     useEffect(() => {
         const filteredData = posts.filter((post) => {
             if (post.name) {
-                return post.name.includes(serach.toLowerCase());
+                return post.name.includes(search.toLowerCase());
             }
         });
         // console.log(filteredComment);
         setFilterComment(filteredData)
-    }, [serach]);
+    }, [search]);
+
+
 
 
     return (
         <>
-            <input type="text" value={serach} onChange={(e) => setSearch(e.target.value)}></input>
+            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)}></input>
+            {/* <button onClick={()=> setButtonId()}>click here</button> */}
             {filterComment.map((data) => (
                 <div key={data.id}>
-                    <h1>{data.name}</h1>
-                    <p>{data.body}</p>
+                    <div className='container'>
+                        <h1 className='name'>{data.name}</h1>
+                        <p className='body'>{data.body}</p>
+                    </div>
                 </div>
             ))};
         </>
