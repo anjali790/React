@@ -12,7 +12,7 @@ export default function Test() {
         axios.get('https://jsonplaceholder.typicode.com/comments')
             .then((response) => {
                 setPosts([...response.data]);
-                setFilterComment([posts, ...response.data])
+                setFilterComment([posts, ...response.data]);
             });
     }, []);
 
