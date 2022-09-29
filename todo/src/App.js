@@ -4,8 +4,9 @@ import './App.css';
 // import { Toggle } from './components/Toggle';
 // import './components/Toggle.css';
 // import {Count} from './components/Count';
-import {Login} from './components/Login';
+// import {Login} from './components/Login';
 import {Count} from './components/Count';
+import { TitleChangeHooks } from './components/TitleChangeHooks';
 
 
 export function App() {
@@ -20,7 +21,8 @@ export function App() {
       {/* <WelcomeClass /> */}
       {/* <Toggle /> */}
       <Count />
-      <Login/>
+      {/* <Login/> */}
+      <TitleChangeHooks/>
     </div>
   );
 }
