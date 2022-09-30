@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 
-export default function Test() {
+export function Test() {
     const [posts, setPosts] = useState([]);
     const [filterComment, setFilterComment] = useState([]);
     const [search, setSearch] = useState("");
@@ -41,7 +41,7 @@ export default function Test() {
                         <p className='body'>{data.body}</p>
                     </div>
                 </div>
-            ))};
+            ))}
         </>
     );
 };
