@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 // import Axios from './components/Axios';
 import { ComponentA } from './components/ComponentA';
+// import Test from './components/Test';
+import Test from './components/Test';
 // import { ComponentB } from './components/ComponentB';
 
 export const NameContext = React.createContext();
 export const BranchContext = React.createContext();
 export const PlaceContext = React.createContext();
+
 
 function App() {
   const [name, setName] = useState('Anjali');
@@ -22,6 +25,7 @@ function App() {
           </PlaceContext.Provider>
         </BranchContext.Provider>
       </NameContext.Provider>
+      <Test/>
 
     </>
   );

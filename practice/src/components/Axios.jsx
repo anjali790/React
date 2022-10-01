@@ -10,18 +10,18 @@ export default function Axios() {
     const [serach, setSearch] = useState("");
 
 
-    //Button click:-
-    // const [post, setPost] = useState([])
-    // const [id, setId] = useState(1);
-    // const [btnId, setBtnId] = useState(1);
+    // Button click:-
+    const [post, setPost] = useState([])
+    const [id, setId] = useState(1);
+    const [btnId, setBtnId] = useState(1);
 
 
 
-    //Button click:-
-    // useEffect(()=>{
-    //     axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-    //     .then((response)=> setPost(response.data));
-    // },[btnId]);
+    // Button click:-
+    useEffect(()=>{
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        .then((response)=> setPost(response.data));
+    },[btnId]);
 
 
     //All data:-
@@ -61,11 +61,11 @@ export default function Axios() {
 
 
             {/* Button part:- */}
-            {/* <h1>{post.title}</h1>
+            <h1>{post.title}</h1>
         <p>{post.body}</p>
         <button onClick={()=> setId(prev=>prev+1)}>Click- {id}</button>
         <input type="text" value={id} onChange={((e)=> setId(e.target.value))}></input>
-        <button onClick={()=> setBtnId(id)}>click here</button> */}
+        <button onClick={()=> setBtnId(id)}>click here</button>
 
 
             {/* All data:- */}
