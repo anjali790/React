@@ -24,8 +24,9 @@ export function ReducerCount() {
     return (
         <>
             <h1>count2 - {count.value}</h1>
-            <button onClick={() => dispatch({type: 'increment', value:5})}>Increment</button>
-            <button onClick={() => dispatch({type: 'decrement', value:3})}>Decrement</button>
+            <button onClick={()=> dispatch({type: 'increment', value: 10})}>Increment by 10</button>
+            <button onClick={() => dispatch({type: 'increment', value:5})}>Increment by 5</button>
+            <button onClick={() => dispatch({type: 'decrement', value:3})}>Decrement by 3</button>
             <button onClick={() => dispatch({type: 'reset'})}>Reset</button>
         </>
     )
