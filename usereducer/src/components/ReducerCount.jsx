@@ -35,6 +35,7 @@ export function ReducerCount() {
             <button onClick={() => dispatch({type: 'DECREMENT', value:3})}>Decrement by 3</button>
             <button onClick={()=> secondDispatch({type: 'DECREMENT', value:20})}>Drecrement secondObj by 20</button>
             <button onClick={() => dispatch({type: 'RESET'})}>Reset</button>
+            <button onClick={()=> secondDispatch({type: 'RESET'})}>Reset Second</button>
             <button onClick={()=> dispatch({type: 'UPDATE', value:'anjali'})}>change name</button>
         </>
     )
