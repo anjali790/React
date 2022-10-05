@@ -15,6 +15,18 @@ export function SignUpForm() {
         }
     }
 
+    const validateAndSetPassword = (passwordValue) => {
+        if (passwordValue.length < 8) {
+            console.log('password is short')
+        } else if (passwordValue.length > 20) {
+            console.log('password is too big')
+        } else {
+            setPassword(passwordValue)
+        }
+    }
+
+    
+
     
 
     return (
