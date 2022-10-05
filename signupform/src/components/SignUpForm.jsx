@@ -25,7 +25,42 @@ export function SignUpForm() {
         }
     }
 
-    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log({ userName, password });
+
+        if (isAlreadyExist(userName, password)) {
+            loginUser(userName, password)
+        } else {
+            signup(userName, password)
+        }
+    }
+
+    // returns boolean
+    const isAlreadyExist = (username, password) => {
+        let users = localStorage.getItem('users')
+        if (users) {
+            users = JSON.parse(users)
+
+            let filtered_user = users.filter((user) => user['userName'] == username && user['password'] == password)
+            if (filtered_user.length > 0) {
+                return true
+            }
+            return false
+        }
+    }
+
+    const loginUser = (username, password) => {
+        console.log(`logging in ${username}`)
+        let loggedInUser = {
+            'userName': username,
+        }
+        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser))
+        setLoggedInUser(loggedInUser)
+
+    }
+
+  
 
     
 
