@@ -1,11 +1,15 @@
-import React, {useEffect, useState} from "react";
+// import React, {useEffect,useState} from "react";
+import React, {useState} from "react";
+import { useUpdateTitle } from "./Hooks/useUpdateTitle";
 
 export function DocTitleTwo(){
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(10);
+    useUpdateTitle(count);
 
-    useEffect(()=>{
-        document.title = `count - ${count}`;
-    },[count]);
+
+    // useEffect(()=>{
+    //     document.title = `count - ${count}`;
+    // },[count]);
 
     return(
         <>
