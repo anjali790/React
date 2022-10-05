@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 export function SignUpForm() {
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
@@ -82,8 +81,6 @@ export function SignUpForm() {
         setUserName("")
         setPassword("")
     }
-
-    
 
     return (
         <>
