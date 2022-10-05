@@ -41,7 +41,7 @@ export function SignUpForm() {
         if (users) {
             users = JSON.parse(users)
 
-            let filtered_user = users.filter((user) => user['userName'] == username && user['password'] == password)
+            let filtered_user = users.filter((user) => user['userName'] === username && user['password'] === password)
             if (filtered_user.length > 0) {
                 return true
             }
@@ -98,7 +98,7 @@ export function SignUpForm() {
                         <label htmlFor="password">Password</label>
                         <input name="password" type="password" id="password" onChange={(e) => validateAndSetPassword(e.target.value)} />
                         <br />
-                        <button type="submit" onClick={handleSubmit} disabled={userName.length == 0 || password.length == 0} >Login</button>
+                        <button type="submit" onClick={handleSubmit} disabled={userName.length === 0 || password.length === 0} >Login</button>
                     </form>
             }
         </>
