@@ -76,7 +76,12 @@ export function SignUpForm() {
         localStorage.setItem('users', users)
     }
 
-   
+    const handleLogout = () => {
+        setLoggedInUser(null)
+        localStorage.setItem('loggedInUser', null)
+        setUserName("")
+        setPassword("")
+    }
 
     
 
