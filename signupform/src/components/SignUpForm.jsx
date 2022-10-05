@@ -60,7 +60,23 @@ export function SignUpForm() {
 
     }
 
-  
+    const signup = (username, password) => {
+        let users = localStorage.getItem('users')
+        if (users) {
+            users = JSON.parse(users);
+        } else {
+            users = []
+        }
+
+        users.push({
+            'userName': username,
+            'password': password
+        })
+        users = JSON.stringify(users)
+        localStorage.setItem('users', users)
+    }
+
+   
 
     
 
