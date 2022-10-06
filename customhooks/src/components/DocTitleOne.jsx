@@ -1,6 +1,6 @@
 // import React, {useEffect, useState} from "react";
 import React, { useState } from "react";
-import { useUpdateTitle } from "./Hooks/useUpdateTitle";
+import { useUpdateTitle } from "./hooks/useUpdateTitle";
 
 export function DocTitleOne() {
     const [count, setCount] = useState(0);
