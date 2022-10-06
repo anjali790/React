@@ -17,7 +17,7 @@ export function CounterOne(){
 
     return(
         <>
-        <h1>count - {counter}</h1>
+        <h1>counter one - {counter}</h1>
         <button onClick={increment}>Increment</button>
         <button onClick={decrement}>Decrement</button>
         <button onClick={reset}>Reset</button>
