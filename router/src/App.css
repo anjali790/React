@@ -1,0 +1,12 @@
+.header{
+    background-color: lightseagreen;
+}
+
+.footer{
+    background-color: lightcoral;
+}
+
+.header_links{
+    text-decoration: none;
+    list-style: none;
+}
