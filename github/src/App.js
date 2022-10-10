@@ -1,10 +1,12 @@
 import './App.css';
-import GitHub from './components/GitHub';
+import Axios from './components/Axios';
+// import GitHub from './components/GitHub';
 
 function App() {
   return (
     <>
-      <GitHub />
+      {/* <GitHub /> */}
+      <Axios/>
     </>
   );
 }
