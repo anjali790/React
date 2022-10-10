@@ -1,12 +1,210 @@
-.header{
-    background-color: lightseagreen;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.footer{
-    background-color: lightcoral;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
-.header_links{
-    text-decoration: none;
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
     list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*=========================================== HEADER =================================== */
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+header .header-container .headingDiv h1 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+header .header-container .header_links li .link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .header-container .header_links li .link:hover{
+    color: coral;
+}
+
+header .header-container .navbarDiv .header_links {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-container .cartDiv i {
+    font-size: 25px;
+}
+
+
+/*=========================================== PRODUCTS ================================*/
+.productDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(249, 246, 246);
+}
+
+.productDiv .productItemDiv {
+    margin: 30px 0px;
+    width: 320px;
+    transition: all .3s ease-out;
+}
+
+.productDiv .productItemDiv:hover{
+    transform: translate(0, 10px);
+}
+
+.productDiv .productItemDiv .productName{
+    width: 280px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(7, 7, 48);
+    font-size: 20px;
+}
+
+.productDiv .productItemDiv .productImg{
+    width: 320px;
+    height: 320px;
 }
