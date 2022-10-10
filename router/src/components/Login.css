@@ -134,9 +134,9 @@ table {
 	border-spacing: 0;
 }
 
-body {
+/* body {
     background-color: #0b4b54;
-}
+} */
 
 .container {
 	display: flex;
