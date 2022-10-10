@@ -27,14 +27,13 @@ header .inputDiv .inputBox {
     width: 300px;
     line-height: 1.5;
     border: none;
-    /* color: white; */
     padding: 5px 10px;
     background-color: var(--btn-bg-clr);
     font-size: 20px;
     outline: none;
 }
 
-header h1{
+header h1 {
     color: white;
 }
 

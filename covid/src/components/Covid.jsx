@@ -20,11 +20,15 @@ export function Covid() {
   useEffect(() => {
     const filteredData = data.filter((datas) => {
       if (datas.Country) {
-        return datas.Country.includes(search);
+        // console.log(search.toLowerCase())
+        // console.log(datas.Country.length)
+        // debugger
+        
+        return datas.Country.toLowerCase().includes(search.toLowerCase());
       }
     });
-    console.log(filteredData);
-    setFilterData(filteredData)
+    // console.log(filteredData);
+    setFilterData(filteredData);
   }, [search]);
 
   useEffect(() => {
