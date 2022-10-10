@@ -1,6 +1,6 @@
 import './App.css';
 // import { HooksCounter } from './components/HooksCounter';
-// import { Counter } from './components/Counter';
+import { Counter } from './components/Counter';
 // import { StateWithObj } from './components/StateWithObj';
 import { StateWithArrays } from './components/StateWithArrays';
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     {/* <HooksCounter/> */}
-    {/* <Counter/> */}
+    <Counter/>
     {/* <StateWithObj/> */}
     <StateWithArrays/>
     </>
