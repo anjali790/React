@@ -1,20 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
 body{
     height: 80vh;
     width: 100%;
     background: radial-gradient(circle, rgb(35, 75, 51) , rgb(130, 73, 52));
 }
 
-form{
+.container{
     margin-top: 150px;
 }
-#table{
+
+.container .table{
     border: 1px solid black;
     background-color: rgb(35, 75, 51);
     margin: auto;
     border: 4px solid black;
 }
 
-#display{
+.container .table thead tr .display{
     width: 775px;
     height: 80px;
     background-color: rgb(146, 79, 54);
@@ -24,7 +31,7 @@ form{
     color: white;
 }
 
-button{
+.container .table tbody tr button{
     width: 107px;
     height: 60px;
     line-height: 2;
@@ -37,6 +44,6 @@ button{
     border-color: rgb(146, 79, 54);
 }
 
-button:hover{
+.container .table tbody tr button:hover{
     background-color: rgb(146, 79, 54);
 }
