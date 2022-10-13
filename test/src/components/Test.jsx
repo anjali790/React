@@ -5,7 +5,7 @@ export function Test() {
     const [posts, setPosts] = useState([]);
     const [filterComment, setFilterComment] = useState([]);
     const [search, setSearch] = useState("");
-    const [buttonId, setButtonId] = useState(1);
+    // const [buttonId, setButtonId] = useState(1);
 
 
     useEffect(() => {

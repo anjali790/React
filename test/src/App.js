@@ -1,12 +1,14 @@
-import './components/Test.css'
+// import './components/Test.css'
 import './App.css';
-import Test from './components/Test';
+import { Test } from './components/Test';
+import { Post } from './components/Post';
 
 
 function App() {
   return (
     <>
-    <Test/>
+      <Test />
+      <Post />
     </>
   );
 }
