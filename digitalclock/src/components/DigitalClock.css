@@ -156,7 +156,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 5px 5px 5px 3px black;
     padding: 5px 10px;
     width: 240px;
     height: 30px;
@@ -169,12 +169,12 @@ body {
     height: 120px;
     margin-top: 22px;
     background-color: #bcb55a;
-    box-shadow: 8px 12px 8px;
-    border: 2px solid #bcb55a;
+    box-shadow: 8px 10px 8px;
 }
 
 .container .box .time {
     margin: 30px;
     font-size: 50px;
-    color: gray;
+    color: rgb(120, 120, 120);
+    font-weight: bolder;
 }

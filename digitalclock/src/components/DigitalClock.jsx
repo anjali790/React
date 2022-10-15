@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './DigitalClock.css'
+import './DigitalClock.css';
 
 export function DigitalClock() {
     let currentTime = new Date().toLocaleTimeString();
@@ -11,7 +11,7 @@ export function DigitalClock() {
         setTime(currentTime);
     }
 
-    setInterval(timer);
+    setInterval(timer,2000);
 
     return (
         <>
