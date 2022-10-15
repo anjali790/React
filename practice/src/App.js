@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 // import Axios from './components/Axios';
 import { ComponentA } from './components/ComponentA';
+import { FetchData } from './components/FetchData';
 // import Test from './components/Test';
-import Test from './components/Test';
+// import Test from './components/Test';
 // import { ComponentB } from './components/ComponentB';
 
 export const NameContext = React.createContext();
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       {/* <Axios/> */}
+      <FetchData/>
       <NameContext.Provider value={name}>
         <BranchContext.Provider value={branch}>
           <PlaceContext.Provider value={place}>
@@ -25,7 +27,7 @@ function App() {
           </PlaceContext.Provider>
         </BranchContext.Provider>
       </NameContext.Provider>
-      <Test/>
+      {/* <Test/> */}
 
     </>
   );
