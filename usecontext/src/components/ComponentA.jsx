@@ -9,7 +9,7 @@ export function ComponentA() {
         <>
             <div className='componentA'>
                 <p>Component A</p>
-                <p>Count is - {count}</p>
+                <p>Count is: {count}</p>
             </div>
             <ComponentB />
         </>

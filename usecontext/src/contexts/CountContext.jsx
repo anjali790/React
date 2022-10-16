@@ -3,12 +3,13 @@ import React, { createContext, useState } from "react";
 const CountStateContext = createContext();
 
 function CountStateProvider({ children }) {
-  console.log("Child", children);
+  // console.log("Child", children);
   const [count, setCount] = useState(0);
-  const handleClick = () => setCount(count + 1);
+  const increment = () => setCount(count + 1);
+  const decrement = ()=> setCount(count-1);
 
   return (
-    <CountStateContext.Provider value={{ count, handleClick }}>
+    <CountStateContext.Provider value={{ count, increment, decrement }}>
       {children}
     </CountStateContext.Provider>
   );

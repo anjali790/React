@@ -1,13 +1,15 @@
-import React,{useContext} from 'react';
+import React, { useContext } from 'react';
 import { CountStateContext } from "../contexts/CountContext";
 
 export function ComponentD() {
-  const { handleClick } = useContext(CountStateContext);
+    const { increment } = useContext(CountStateContext);
+    const { decrement } = useContext(CountStateContext);
 
     return (
         <div className='componentD'>
             <p>Component D</p>
-            <button onClick={handleClick}>set count</button>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
         </div>
     )
 }
