@@ -60,10 +60,10 @@ footer {
 .active{
   color: aqua;
 }
-
+ 
 a:active{
   color: aqua;
-}
+} 
 
 .image {
   width: 80vw;
