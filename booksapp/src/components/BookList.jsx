@@ -16,7 +16,7 @@ export function BookList(props) {
       if (props.search) {
         filteredBook = resp.data.filter((datas) => {
           if (datas.title) {
-            return datas.title.toLowerCase().includes(props.search.toLowerCase());
+            return datas.title.includes(props.search.toLowerCase());
           }
         });
       }
