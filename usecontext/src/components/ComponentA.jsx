@@ -1,13 +1,13 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { ComponentB } from './ComponentB';
 import { CountStateContext } from "../contexts/CountContext";
 
 export function ComponentA() {
-  const { count } = useContext(CountStateContext);
+    const { count } = useContext(CountStateContext);
 
     return (
         <>
-            <div className='componentA'>
+            <div className={count?'componentA': 'componentB'}>
                 <p>Component A</p>
                 <p>Count is: {count}</p>
             </div>
