@@ -179,24 +179,24 @@ header .header-container .cartDiv i {
 
 
 /*=========================================== PRODUCTS ================================*/
-.productDiv{
+.product_div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(249, 246, 246);
 }
 
-.productDiv .productItemDiv {
+.product_div .product_item_div {
     margin: 30px 0px;
     width: 320px;
     transition: all .3s ease-out;
 }
 
-.productDiv .productItemDiv:hover{
+.product_div .product_item_div:hover{
     transform: translate(0, 10px);
 }
 
-.productDiv .productItemDiv .productName{
+.product_div .product_item_div .product_name{
     width: 280px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -204,7 +204,7 @@ header .header-container .cartDiv i {
     font-size: 20px;
 }
 
-.productDiv .productItemDiv .productImg{
+.product_niv .product_item_div .product_img{
     width: 320px;
     height: 320px;
 }

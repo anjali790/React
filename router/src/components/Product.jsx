@@ -21,15 +21,15 @@ export function Product() {
 
   return (
     <>
-      <div className='productDiv'>
+      <div className='product_div'>
         {
           post.map(post =>
             <div key={post.id}>
-              <div className='productItemDiv'>
-                <p className='productName'>{post.Name}</p>
-                <img src={post.urlImg} alt="" className='productImg'></img>
+              <div className='product_item_div'>
+                <p className='product_name'>{post.Name}</p>
+                <img src={post.urlImg} alt="" className='product_img'></img>
                 <div>
-                  <button onClick={(() => addToCart)} className="addToCartBtn">Add to cart</button>
+                  <button onClick={(() => addToCart)} className="add_to_cart_btn">Add to cart</button>
                 </div>
               </div>
             </div>
