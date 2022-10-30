@@ -1,22 +1,22 @@
 .componentA {
   background-color: lightseagreen;
-  height: 10vh;
+  height: 80px;
   margin-bottom: 20px;
 }
 
 .componentB {
   background-color: lightcoral;
-  height: 10vh;
+  height: 80px;
   margin-bottom: 20px;
 }
 
 .componentC {
   background-color: lightslategray;
-  height: 10vh;
+  height: 80px;
   margin-bottom: 20px;
 }
 
 .componentD {
   background-color: lightgreen;
-  height: 10vh;
+  height: 80px;
 }
