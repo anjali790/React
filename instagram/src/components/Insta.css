@@ -279,8 +279,9 @@ section {
     margin-bottom: 7px;
 }
 
-.insta-post-footer .heart-icon {
+.insta-post-footer #heart-icon {
     color: red;
+    cursor: pointer;
 }
 
 .insta-post-footer .post-icon i,
@@ -338,4 +339,18 @@ section {
 
 .comment-footer .left-footer i {
     margin-right: 5px;
+}
+
+
+/* Loading  */
+.loading_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
 }
