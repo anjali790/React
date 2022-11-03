@@ -1,10 +1,12 @@
+import logo from './logo.svg';
 import './App.css';
 import { TestPractice } from './components/TestPractice';
 
 function App() {
   return (
     <>
-      <TestPractice />
+    <p>Learn react</p>
+    <TestPractice/>
     </>
   );
 }
