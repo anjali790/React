@@ -74,8 +74,41 @@ describe('Test Practice Component', () => {
 
 
     //getByText:- p, span, div
+    test('render para correctly', () => {
+        render(<TestPractice />);
+        const paraElement = screen.getByText('Learn html, css, js and react');
+        expect(paraElement).toBeInTheDocument();
+    });
 
 
+    //getByDisplayValue:-
+    test('render inputText correctly', () => {
+        render(<TestPractice />);
+        const inputElement = screen.getByDisplayValue('vasanth');
+        expect(inputElement).toBeInTheDocument();
+    });
 
 
+    //getByAltText:-
+    test('render img correctly', () => {
+        render(<TestPractice />);
+        const imgElement = screen.getByAltText('img');
+        expect(imgElement).toBeInTheDocument();
+    });
+
+
+    //getByTitle:-
+    test('render heading with title correctly', () => {
+        render(<TestPractice />);
+        const compHeadingElement = screen.getByTitle('vasanth');
+        expect(compHeadingElement).toBeInTheDocument();
+    });
+
+
+    //getByCustom:-
+    test('render div correctly', () => {
+        render(<TestPractice />);
+        const customElement = screen.getByTestId('custom');
+        expect(customElement).toBeInTheDocument();
+    });
 });

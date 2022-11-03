@@ -4,8 +4,8 @@ import { TestPractice } from './components/TestPractice';
 function App() {
   return (
     <>
-    <p>Learn react</p>
-    <TestPractice/>
+      <TestPractice />
+      <p>Learn react</p>
     </>
   );
 }

@@ -3,13 +3,16 @@ import React from 'react';
 export function TestPractice() {
     return (
         <>
-            <h1>AirCampus</h1>
+            <h1 title="vasanth">AirCampus</h1>
             <h3>React session</h3>
+            <p>Learn html, css, js and react</p>
             <h3>React testing class</h3>
+            <img src='' alt='img' />
+            <div data-testid='custom'></div>
             <form>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id='name' placeholder='enter name here'/>
+                    <input type="text" id='name' placeholder='enter name here' value='vasanth' />
                 </div>
                 <div>
                     <label htmlFor='age'>Age</label>
