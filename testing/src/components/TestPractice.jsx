@@ -9,7 +9,7 @@ export function TestPractice() {
             <form>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id='name' />
+                    <input type="text" id='name' placeholder='enter name here'/>
                 </div>
                 <div>
                     <label htmlFor='age'>Age</label>

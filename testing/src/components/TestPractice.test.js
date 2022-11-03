@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { TestPractice } from "./TestPractice";
 
 describe('Test Practice Component', () => {
+
     //getByRole:-
     test('renders input correctly', () => {
         render(<TestPractice />);
@@ -37,7 +38,6 @@ describe('Test Practice Component', () => {
         expect(compHeadingElement).toBeInTheDocument();
     });
 
-
     test('render heading correctly', () => {
         render(<TestPractice />);
         const compHeadingElement = screen.getByRole('heading', {
@@ -46,6 +46,34 @@ describe('Test Practice Component', () => {
         });
         expect(compHeadingElement).toBeInTheDocument();
     });
+
+
+
+    //getByLabelText:-
+    test('render input correctly', () => {
+        render(<TestPractice />);
+        const nameElement = screen.getByLabelText('Name', {
+            selector: "input",
+        });
+        expect(nameElement).toBeInTheDocument();
+    });
+
+    test('render select dropdown correctly', () => {
+        render(<TestPractice />);
+        const comboboxElement = screen.getByLabelText('Location');
+        expect(comboboxElement).toBeInTheDocument();
+    });
+
+
+    //getByPlaceholder:-
+    test('render inputBox correctly', () => {
+        render(<TestPractice />);
+        const nameElement = screen.getByPlaceholderText('enter name here');
+        expect(nameElement).toBeInTheDocument();
+    });
+
+
+    //getByText:- p, span, div
 
 
 
