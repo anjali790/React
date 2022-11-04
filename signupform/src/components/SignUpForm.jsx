@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 export function SignUpForm() {
-    const [userName, setUserName] = useState("")
-    const [password, setPassword] = useState("")
-    const [loggedInUser, setLoggedInUser] = useState(null)
+    const [userName, setUserName] = useState("");
+    const [password, setPassword] = useState("");
+    const [loggedInUser, setLoggedInUser] = useState(null);
 
     const validateAndSetUserName = (e) => {
         let value = e.target.value;

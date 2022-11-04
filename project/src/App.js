@@ -1,6 +1,7 @@
 import './App.css';
 import { Component } from 'react';
-import Shopping from './components/Shopping';
+import { Names } from './components/Names';
+// import Shopping from './components/Shopping';
 // import { Toggle } from './Toggle';
 // import { Header } from './components/Header';
 // import { Main } from './components/Main';
@@ -23,7 +24,8 @@ export default class App extends Component {
         {/* <Main paraNo={4}/> */}
         {/* <Select /> */}
         {/* <Checkbox/> */}
-        <Shopping/>
+        {/* <Shopping/> */}
+        <Names/>
       </>
       )
   }

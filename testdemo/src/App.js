@@ -6,8 +6,8 @@ import { Counter } from './components/Counter/Counter';
 function App() {
   return (
     <>
-    <Greet name='anjali'/>
-    <Counter/>
+      <Greet />
+      <Counter />
     </>
   );
 }
