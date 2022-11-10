@@ -1,11 +1,16 @@
 import './App.css';
-import { TestPractice } from './components/TestPractice';
+import { Skills } from './components/Skills/Skills';
+// import { TestPractice } from './components/TestPractice';
 
 function App() {
+  // const skills = ['HTML', 'CSS', 'Javascript'];
+
   return (
     <>
-      <TestPractice />
+      {/* <TestPractice /> */}
       <p>Learn react</p>
+      <Skills />
+      {/* <Skills skills={skills} /> */}
     </>
   );
 }
