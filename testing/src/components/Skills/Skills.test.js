@@ -14,4 +14,16 @@ describe.only('Skills component', () => {
         const listElements = screen.getAllByRole("listitem");
         expect(listElements).toHaveLength(skills.length);
     });
+
+    test('render login button', async () => {
+        render(<Skills skills={skills} />);
+        const loginButton = await screen.findByRole('button', {
+            name: 'log in',
+        }, {
+            timeout: 2000,
+        });
+        expect(loginButton).toBeInTheDocument();
+    });
+
+    
 });
