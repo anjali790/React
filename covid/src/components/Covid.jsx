@@ -23,7 +23,7 @@ export function Covid() {
         // console.log(search.toLowerCase())
         // console.log(datas.Country.length)
         // debugger
-        
+
         return datas.Country.toLowerCase().includes(search.toLowerCase());
       }
     });
