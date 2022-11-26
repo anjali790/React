@@ -8,11 +8,9 @@ export function Cricket() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        // axios.get(`https://newsapi.org/v2/everything?q=cricket&from=2022-09-20&sortBy=publishedAt&apiKey=46be7c2d81f5465e8318c9dfaebfd6fe`)
-            axios.get(`https://newsapi.org/v2/everything?q=cricket&from=2022-10-17&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
+        axios.get(`https://newsapi.org/v2/everything?q=cricket&from=2022-11-22&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
             .then((response) => {
                 setNews([...response.data.articles]);
-                // console.log(cricket)
                 setLoading(true);
             })
     }, []);

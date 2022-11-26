@@ -10,13 +10,12 @@ import { Home } from './components/Home';
 import { Sidebar } from './components/Sidebar';
 import { Error } from './components/Error';
 
-
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path='*' element={<Sidebar/>}>
+        <Route path='*' element={<Sidebar />}>
         </Route>
       </Routes>
       {/* <Routes>
@@ -39,7 +38,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error />}></Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
