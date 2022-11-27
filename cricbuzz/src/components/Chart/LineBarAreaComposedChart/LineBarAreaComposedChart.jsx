@@ -17,8 +17,8 @@ export function LineBarAreaComposedChart() {
         <RadialBarChart
             width={550}
             height={400}
-            cx={150}
-            cy={150}
+            cx={280}
+            cy={200}
             innerRadius={20}
             outerRadius={140}
             barSize={20}
