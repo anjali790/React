@@ -42,7 +42,7 @@ export function PercentageStackedAreaChart() {
 
     return (
         <AreaChart
-            width={600}
+            width={700}
             height={500}
             data={player}
             margin={{

@@ -1,5 +1,8 @@
-h3 {
-    margin: 20px;
+.venue-Heading{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-weight: bolder;
     color: #EE2364;
+    font-size: 25px;
 }

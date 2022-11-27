@@ -9,7 +9,7 @@ import { PercentageStackedAreaChart } from '../Chart/PercentageStackedAreaChart/
 import { SimpleRadarChart } from '../Chart/SimpleRadarChart/SimpleRadarChart';
 import { LineBarAreaComposedChart } from '../Chart/LineBarAreaComposedChart/LineBarAreaComposedChart';
 import { CricbuzzTable } from '../Table/CricbuzzTable';
-// import { SliderComp } from '../Carousel/SliderComp';
+import { SliderComp } from '../Carousel/SliderComp';
 
 import { Card } from '../Card/Card';
 
@@ -44,10 +44,11 @@ export function Dashboard() {
                     <Grid item xs={6}>
                         <Item><PercentageStackedAreaChart /></Item>
                     </Grid>
-                    {/* <h3>HOST CITIES & VENUES</h3>
-                    <Grid item xs={3} className="venue_div">
+                    <h3 className='venue-Heading'>HOST CITIES & VENUES(MOST RUNS)</h3>
+                    <Grid item xs={12} className="venue_div">
                         <SliderComp venue={venue} />
-                    </Grid> */}
+                    </Grid>
+                    <h3 className='venue-Heading'>ICC Mens T20 World Cup 2022</h3>
                     <Grid item xs={12}>
                         <CricbuzzTable />
                     </Grid>
