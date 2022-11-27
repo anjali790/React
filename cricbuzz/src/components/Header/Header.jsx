@@ -46,7 +46,7 @@ export function Header(props) {
                     <Typography
                         variant="h6"
                         component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', color: 'aqua', fontWeight: 'bolder' } }}
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', color: 'lightgreen', fontWeight: 'bolder' } }}
                     >
                         Cricbuzz
                     </Typography>

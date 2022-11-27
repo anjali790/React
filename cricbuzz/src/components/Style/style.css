@@ -6,22 +6,42 @@ body {
     background-color: var(--bg-clr);
 }
 
-.container .contact_div span{
+.container .contact_div span {
     color: var(--contactus-clr);
 }
 
-.container .contact_div h1{
+.container .contact_div h1 {
     color: var(--contactus-clr);
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--link-clr);
+}
+
+.active {
+    color: var(--active-link-clr);
+}
+
+.MuiButton-text {
+    color: var(--theme-icon-clr) !important;
 }
 
 .light-mode {
     --bg-clr: #EEF1F7;
     --component-bg-clr: white;
-    --contactus-clr:black;
+    --contactus-clr: black;
+    --link-clr: lightslategray;
+    --active-link-clr: lightcoral;
+    --theme-icon-clr: rgb(250, 250, 33);
 }
 
 .dark-mode {
     --bg-clr: #141A2D;
     --component-bg-clr: #252C40;
-    --contactus-clr:white;
+    --contactus-clr: white;
+    --link-clr: lightgreen;
+    --active-link-clr: aqua;
+    --theme-icon-clr: white;
+
 }

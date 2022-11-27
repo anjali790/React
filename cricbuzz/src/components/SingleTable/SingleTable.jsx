@@ -23,38 +23,40 @@ export function SingleTable() {
     const data = ["MATCHES", "INNS", "RUNS", "AVG", "SR", "FOURS", "SIXES"];
 
     return (
-        <TableContainer component={Paper} style={{ marginTop: '90px', marginLeft: '10px', marginRight: '10px', marginBottom: '20px' }}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                <TableHead className='table_head'>
-                    <TableRow>
-                        <TableCell className='player_img'>PLAYER</TableCell>
-                        <TableCell className='player_name'>NAME</TableCell>
-                        {data.map((item) => {
-                            return <TableCell align='right'>{item}</TableCell>;
-                        })}
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {tableData.map(({ match, inns, runs, avg, sr, fours, sixes, name, imgUrl }) => (
-                        <TableRow
-                            key={name}
-                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                            <TableCell component="th" scope="row">
-                                <img src={imgUrl} alt="" />
-                            </TableCell>
-                            <TableCell>{name}</TableCell>
-                            <TableCell align="right">{match}</TableCell>
-                            <TableCell align="right">{inns}</TableCell>
-                            <TableCell align="right">{runs}</TableCell>
-                            <TableCell align="right">{avg}</TableCell>
-                            <TableCell align="right">{sr}</TableCell>
-                            <TableCell align="right">{fours}</TableCell>
-                            <TableCell align="right">{sixes}</TableCell>
+        <div className="tableContainer">
+            <TableContainer component={Paper} >
+                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                    <TableHead className='table_head'>
+                        <TableRow>
+                            <TableCell className='player_img'>PLAYER</TableCell>
+                            <TableCell className='player_name'>NAME</TableCell>
+                            {data.map((item) => {
+                                return <TableCell align='right'>{item}</TableCell>;
+                            })}
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+                    </TableHead>
+                    <TableBody>
+                        {tableData.map(({ match, inns, runs, avg, sr, fours, sixes, name, imgUrl }) => (
+                            <TableRow
+                                key={name}
+                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                            >
+                                <TableCell component="th" scope="row">
+                                    <img src={imgUrl} alt="" />
+                                </TableCell>
+                                <TableCell>{name}</TableCell>
+                                <TableCell align="right">{match}</TableCell>
+                                <TableCell align="right">{inns}</TableCell>
+                                <TableCell align="right">{runs}</TableCell>
+                                <TableCell align="right">{avg}</TableCell>
+                                <TableCell align="right">{sr}</TableCell>
+                                <TableCell align="right">{fours}</TableCell>
+                                <TableCell align="right">{sixes}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </div>
     );
 }

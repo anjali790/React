@@ -16,7 +16,7 @@ export function ContactUs() {
                         <i class="fa-solid fa-phone"></i> <span>+91 7234567890</span>
                     </div>
                     <div className='contact_icon'>
-                        <i class="fa-solid fa-copyright"></i><span>anjali123@gmail.com</span>
+                        <i class="fa-solid fa-copyright"></i><span>anjali123@gmail.com, amit3@gmail.com & prabhat76@gmail.com</span>
                     </div>
                     <div className='contact_icon'>
                         <i class="fa-solid fa-location-dot"></i><span>Flat no. 35 4th floor, Chirag Delhi, New Delhi</span>

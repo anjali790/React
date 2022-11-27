@@ -8,26 +8,6 @@
     width: 330px;
 }
 
-/* .MuiPaper-elevation {
-    background-color: #dad5c0 !important;
-} */
-/* 
-.MuiPaper-elevation {
-    background-color: var(--component-bg-clr) !important;
-}
-
-body {
-    background-color: var(--bg-clr);
-} */
-
-/* .MuiBox-root {
-    background-color: var(--bg-clr);
-} */
-
-/* .MuiBox-root{
-    background-color: #EEF1F7;
-} */
-
 .outermost-container {
     display: flex;
     justify-content: space-between;
@@ -66,6 +46,11 @@ body {
 
 .date {
     color: darkmagenta;
+    font-size: 16px;
+}
+
+.time {
+    font-size: 16px;
 }
 
 .link {
@@ -75,13 +60,3 @@ body {
     font-size: large;
     cursor: pointer;
 }
-
-/* .light-mode {
-    --bg-clr: #EEF1F7;
-    --component-bg-clr: white;
-}
-
-.dark-mode {
-    --bg-clr: #141A2D;
-    --component-bg-clr: #252C40;
-} */

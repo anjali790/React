@@ -1,4 +1,11 @@
-tbody tr th img{
+tbody tr th img {
     height: 40px;
     border-radius: 50%;
+}
+
+.tableContainer {
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
