@@ -8,11 +8,14 @@ import { SimpleRadarChart } from '../Chart/SimpleRadarChart/SimpleRadarChart';
 import { PercentageStackedAreaChart } from '../Chart/PercentageStackedAreaChart/PercentageStackedAreaChart';
 import { Item } from '../Dashboard/ConstData';
 
+import './allcharts.css';
+
 export function AllCharts() {
     return (
         <>
             <Box sx={{ flexGrow: 1 }} style={{ marginTop: '90px', marginLeft: '20px', marginRight: '20px', marginBottom: '20px' }}>
-                <Grid container spacing={2} >
+                <h3 className='venue-Heading'>Host Cities & Venues</h3>
+                <Grid container spacing={2}>
                     <Grid item xs={7}>
                         <Item><BarCharts /></Item>
                     </Grid>

@@ -10,8 +10,8 @@ import { SimpleRadarChart } from '../Chart/SimpleRadarChart/SimpleRadarChart';
 import { LineBarAreaComposedChart } from '../Chart/LineBarAreaComposedChart/LineBarAreaComposedChart';
 import { CricbuzzTable } from '../Table/CricbuzzTable';
 import { SliderComp } from '../Carousel/SliderComp';
-
 import { Card } from '../Card/Card';
+import { PlayerCard } from '../PlayerCard/PlayerCard';
 
 import './dashboard.css';
 
@@ -39,18 +39,21 @@ export function Dashboard() {
                         <Item><LineBarAreaComposedChart /></Item>
                     </Grid>
                     <Grid item xs={6}>
-                        <Item><SimpleRadarChart /></Item>
+                        <Item style={{ color: "white" }}><SimpleRadarChart /></Item>
                     </Grid>
                     <Grid item xs={6}>
                         <Item><PercentageStackedAreaChart /></Item>
                     </Grid>
-                    <h3 className='venue-Heading'>HOST CITIES & VENUES(MOST RUNS)</h3>
+                    <h3 className='venue-Heading'>Host Cities & Venues</h3>
                     <Grid item xs={12} className="venue_div">
                         <SliderComp venue={venue} />
                     </Grid>
-                    <h3 className='venue-Heading'>ICC Mens T20 World Cup 2022</h3>
-                    <Grid item xs={12}>
+                    <h3 className='venue-Heading'>ICC Mens T20 World Cup 2022 (Most Runs)</h3>
+                    <Grid item xs={8}>
                         <CricbuzzTable />
+                    </Grid>
+                    <Grid item xs={4}>
+                        <PlayerCard />
                     </Grid>
                 </Grid>
             </Box>

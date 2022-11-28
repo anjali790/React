@@ -24,6 +24,7 @@ export function SingleTable() {
 
     return (
         <div className="tableContainer">
+            <h3 className='venue-Heading'>ICC Mens T20 World Cup 2022 (Most Runs)</h3>
             <TableContainer component={Paper} >
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead className='table_head'>

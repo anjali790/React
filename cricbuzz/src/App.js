@@ -5,9 +5,8 @@ import { News } from './components/News/News';
 import { SingleTable } from './components/SingleTable/SingleTable';
 import { Dashboard } from './components/Dashboard/Dashboard';
 import { AllCharts } from './components/Charts/AllCharts';
-
-import './App.css';
 import { ContactUs } from './components/ContactUs/ContactUs';
+import { Login } from './components/Login/Login';
 
 function App() {
   return (
@@ -18,8 +17,8 @@ function App() {
         <Route path='/charts' element={<AllCharts />} />
         <Route path='/table' element={<SingleTable />} />
         <Route path='/news' element={<News />} />
-        <Route path='/login' element={<Dashboard />} />
-        <Route path='/contactUs' element={<ContactUs/>} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/contactUs' element={<ContactUs />} />
       </Routes>
     </>
   );
