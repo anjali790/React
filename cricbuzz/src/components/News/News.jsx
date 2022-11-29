@@ -15,6 +15,7 @@ export function News() {
 
     return (
         <>
+            <h3 className='venue-Heading'>All Charts</h3>
             <div className='newscontainer'>
                 {
                     news.map(({ url, urlToImage, title, description }) =>

@@ -23,29 +23,29 @@ ul li a {
     color: var(--active-link-clr);
 }
 
-.css-1q1u3t4-MuiTableRow-root th {
+.MuiTableRow-head th {
     color: var(--table-th-clr);
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 18px;
 }
 
-.css-34nofg-MuiTableRow-root td {
+.MuiTableRow-root td {
     color: var(--table-td-clr);
     font-size: 16px;
     font-weight: bold;
 }
 
-.css-34nofg-MuiTableRow-root:nth-child(even) {
+.MuiTableRow-root:nth-child(even) {
     background-color: var(--table-bg-clr);
 }
 
-.css-34nofg-MuiTableRow-root:hover {
+.MuiTableRow-root:hover {
     background-color: var(--table-td-hover-clr);
 }
 
-.MuiButton-text {
-    color: var(--theme-icon-clr) !important;
+.theme-icon .MuiButton-text {
+    color: var(--theme-icon-clr);
 }
 
 .venue-Heading {
@@ -53,7 +53,7 @@ ul li a {
 }
 
 .light-mode {
-    --bg-clr: rgb(238, 240, 178);
+    --bg-clr: rgb(247, 247, 247);
     --component-bg-clr: white;
     --contactus-clr: black;
     --link-clr: lightslategray;

@@ -25,8 +25,8 @@ export function CricbuzzTable() {
     return (
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                <TableHead className='table_head'>
-                    <TableRow>
+                <TableHead className='table-head'>
+                    <TableRow className='table-row'>
                         <TableCell className='player_img'>PLAYER</TableCell>
                         <TableCell className='player_name'>NAME</TableCell>
                         {data.map((item) => {

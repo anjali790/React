@@ -26,7 +26,7 @@ export function LineBarAreaComposedChart() {
 
   return (
     <>
-      <img className='player-image' src="https://s.ndtvimg.com/images/entities/300/virat-kohli-967.png" alt="virat kohli" />
+      <img className='player-img' src="https://s.ndtvimg.com/images/entities/300/virat-kohli-967.png" alt="virat kohli" />
       <PieChart width={500} height={400}>
         <Pie
           data={data}

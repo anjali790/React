@@ -50,7 +50,7 @@ export function Header(props) {
                     >
                         Cricbuzz
                     </Typography>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    <Box className='theme-icon' sx={{ display: { xs: 'none', sm: 'block' } }}>
                         <Button sx={{ color: '#fff' }}><ul className='header-links'><li><NavLink to="/" end id="Link" style={{ textDecoration: "none" }}>Dashboard</NavLink></li></ul></Button>
                         <Button sx={{ color: '#fff' }}><ul><li><NavLink to="charts" id="Link" >Charts</NavLink></li></ul></Button>
                         <Button sx={{ color: '#fff' }}><ul><li><NavLink to="table" id="Link">Table</NavLink></li></ul></Button>

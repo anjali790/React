@@ -30,7 +30,7 @@ export default function Card({ item }) {
                                     <h1 className="high-score">{highScore}</h1>
                                 </div>
                                 <div className="right-div">
-                                    <img height="248px" width="180px" src={imgUrl} alt="" />
+                                    <img height="248px" width="200px" src={imgUrl} alt="" />
                                 </div>
                             </div>
                         </Item>
