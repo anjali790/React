@@ -19,7 +19,7 @@ export function Login() {
             setUpdateText([...updateText, details]);
             setEmail("");
             setPassword("");
-            alert('Loged in successfully')
+            alert('Logged in successfully')
             localStorage.setItem('details', JSON.stringify(details));
         } else {
             alert('invalid details');

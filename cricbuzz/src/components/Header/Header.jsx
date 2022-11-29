@@ -33,7 +33,7 @@ export function Header(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <AppBar component="nav">
-                <Toolbar>
+                <Toolbar className='icon-bar'>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -46,7 +46,7 @@ export function Header(props) {
                     <Typography
                         variant="h6"
                         component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', color: 'lightgreen', fontWeight: 'bolder' } }}
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', fontWeight: 'bolder' } }}
                     >
                         Cricbuzz
                     </Typography>
