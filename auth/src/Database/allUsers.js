@@ -8,10 +8,6 @@ const allUsers = [
         'password': 'pass'
     },
     {
-        'user': 'shubbu@gmail.com',
-        'password': 'pass'
-    },
-    {
         'user': 'shubro@gmail.com',
         'password': 'pass'
     },
@@ -23,6 +19,6 @@ const allUsers = [
         'user': 'shashank@gmail.com',
         'password': 'pass'
     },
-];
+]
 
 export default allUsers;
