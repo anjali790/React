@@ -9,7 +9,6 @@ export function Header(props) {
     }, [theme]);
 
     const toggle = () => {
-        //    theme==="dark-mode"? setTheme("dark-mode"): setTheme("light-mode")
         if (theme === "dark-mode") {
             setTheme('light-mode');
         } else {

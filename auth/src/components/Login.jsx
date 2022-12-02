@@ -8,7 +8,7 @@ export function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // console.log(allUsers)
+
     let result = allUsers.filter((user) => {
       console.log(allUsers)
       return user.email === loginData.email && user.password === loginData.password

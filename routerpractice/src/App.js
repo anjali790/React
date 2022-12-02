@@ -26,15 +26,12 @@ function App() {
         <Route path='/contact' element={<Sidebar text="contact" />}>
         </Route>
       </Routes> */}
-
       <Routes>
         <Route index element={<Home />} />
-
         <Route path='/about'>
           <Route index element={<About />} />
           <Route path=':id' element={<Content />}></Route>
         </Route>
-
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error />}></Route>
       </Routes>

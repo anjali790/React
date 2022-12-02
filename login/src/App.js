@@ -1,10 +1,12 @@
 import './App.css';
-import { Login } from './components/Login';
+import { Form } from './components/Form';
+// import { Login } from './components/Login';
 
 function App() {
   return (
     <>
-    <Login/>
+    {/* <Login/> */}
+    <Form/>
     </>
   );
 }

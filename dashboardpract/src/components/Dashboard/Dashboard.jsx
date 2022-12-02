@@ -4,14 +4,13 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 import { Item } from './ConstData';
-import { BarCharts } from '../Charts/BarChart/BarCharts';
-import { PercentageStackedAreaChart } from '../Charts/PercentageStackedAreaChart/PercentageStackedAreaChart';
-import { SimpleRadarChart } from '../Charts/SimpleRadarChart/SimpleRadarChart';
-import { LineBarAreaComposedChart } from '../Charts/LineBarAreaComposedChart/LineBarAreaComposedChart';
+import { BarCharts } from '../Chart/BarChart/BarChart';
+import { PercentageStackedAreaChart } from '../Chart/PercentageStackedAreaChart/PercentageStackedAreaChart';
+import { SimpleRadarChart } from '../Chart/SimpleRadarChart/SimpleRadarChart';
+import { LineBarAreaComposedChart } from '../Chart/LineBarAreaComposedChart/LineBarAreaComposedChart';
 import { CricbuzzTable } from '../Table/CricbuzzTable';
 import { SliderComp } from '../Carousel/SliderComp';
-import { News } from '../News/News';
-
+import { Card } from '../Card/Card';
 import './dashboard.css';
 
 export function Dashboard() {
@@ -26,8 +25,11 @@ export function Dashboard() {
 
     return (
         <>
-            <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={2}>
+            <Box >
+                <Grid container spacing={2} >
+                    <Grid item xs={12}>
+                        <Card />
+                    </Grid>
                     <Grid item xs={7}>
                         <Item><BarCharts /></Item>
                     </Grid>
@@ -41,14 +43,11 @@ export function Dashboard() {
                         <Item><PercentageStackedAreaChart /></Item>
                     </Grid>
                     <h3>HOST CITIES & VENUES</h3>
-                    {/* <Grid item xs={12} className="venue_div">
+                    <Grid item md={12} className="venue_div">
                         <SliderComp venue={venue} />
-                    </Grid> */}
-                    <Grid item xs={12}>
-                        <CricbuzzTable />
                     </Grid>
                     <Grid item xs={12}>
-                        <News />
+                        <CricbuzzTable />
                     </Grid>
                 </Grid>
             </Box>

@@ -24,8 +24,20 @@ export function LineBarAreaComposedChart() {
       })
   }, []);
 
+  const handleLabel = () => {
+    return ""
+  }
+
   return (
     <>
+      {/* <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span> */}
       <img className='player-image' src="https://s.ndtvimg.com/images/entities/300/virat-kohli-967.png" alt="virat kohli" />
       <PieChart width={500} height={400}>
         <Pie
@@ -33,6 +45,7 @@ export function LineBarAreaComposedChart() {
           innerRadius={75}
           outerRadius={120}
           dataKey="value"
+          label={handleLabel}
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />

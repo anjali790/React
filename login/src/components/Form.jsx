@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import './LoginForm.css';
+import './Login.css';
 
-export function Login() {
+export function Form() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -55,7 +55,6 @@ export function Login() {
                             <button className="btn" type="submit">Login</button>
                         </div>
                     </fieldset>
-
                 </form>
                 <div>
                     {

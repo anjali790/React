@@ -24,6 +24,7 @@ export function SliderComp({ venue }) {
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
+                style={{width:"1400px"}}
             >
                 {venue.map(({ imgUrl, address, about }) => (
                     <Item>

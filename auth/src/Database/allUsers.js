@@ -1,22 +1,22 @@
 const allUsers = [
     {
-        'user': 'anjali@gmail.com',
+        'email': 'anjali@gmail.com',
         'password': 'pass'
     },
     {
-        'user': 'shubhankar@gmail.com',
+        'email': 'shubhankar@gmail.com',
         'password': 'pass'
     },
     {
-        'user': 'shubro@gmail.com',
+        'email': 'shubro@gmail.com',
         'password': 'pass'
     },
     {
-        'user': 'ekta@gmail.com',
+        'email': 'ekta@gmail.com',
         'password': 'pass'
     },
     {
-        'user': 'shashank@gmail.com',
+        'email': 'shashank@gmail.com',
         'password': 'pass'
     },
 ]

@@ -30,14 +30,15 @@ export function SimpleRadarChart() {
       data={pct}
     >
       <PolarGrid />
-      <PolarAngleAxis dataKey="value[2]" />
+      <PolarAngleAxis tick={{ fill: "grey" }} tickLine={{ stroke: "coral" }} dataKey="value[2]" />
       <PolarRadiusAxis />
       <Radar
         dataKey="value[3]"
-        stroke="#8884d8"
-        fill="#8884d8"
+        stroke="coral"
+        fill="pink"
         fillOpacity={0.6}
       />
     </RadarChart>
   );
 }
+

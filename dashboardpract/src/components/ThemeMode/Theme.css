@@ -1,0 +1,57 @@
+:root {
+    --bg-clr: pink;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-clr);
+    overflow: hidden;
+}
+
+.color-switcher {
+    width: 10rem;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    padding: 1rem;
+    transform: translate(0, 50%);
+}
+
+.heading {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.color-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.color-item {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--bg-clr);
+}
+
+button {
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    position: absolute;
+    border: none;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    color: blue;
+    font-size: 1.2rem;
+    display: grid;
+    place-items: center;
+}

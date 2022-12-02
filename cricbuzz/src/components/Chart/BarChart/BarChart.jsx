@@ -22,6 +22,7 @@ export function BarCharts() {
 
     return (
         <>
+        {/* <p>wickets</p> */}
             <BarChart
                 width={700}
                 height={400}
