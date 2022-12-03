@@ -14,7 +14,7 @@ export function SingleTable() {
     const [tableData, setTableData] = useState([]);
 
     useEffect(() => {
-        axios.get('https://frozen-harbor-02472.herokuapp.com/table')
+        axios.get('table.json')
             .then((response) => {
                 setTableData([...response.data]);
             });

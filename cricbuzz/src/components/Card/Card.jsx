@@ -21,7 +21,7 @@ export function Card() {
 
   useEffect(() => {
     axios
-      .get(`https://frozen-harbor-02472.herokuapp.com/series`)
+      .get(`series.json`)
       .then((res) => {
         setData([...res.data]);
       });

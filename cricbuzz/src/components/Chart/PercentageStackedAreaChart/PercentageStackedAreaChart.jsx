@@ -34,7 +34,7 @@ export function PercentageStackedAreaChart() {
 
     useEffect(() => {
         axios
-            .get(`https://frozen-harbor-02472.herokuapp.com/captains`)
+            .get(`captains.json`)
             .then((res) => {
                 setPlayer([...res.data]);
             });

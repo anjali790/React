@@ -19,7 +19,7 @@ export function Dashboard() {
     const [venue, setVenue] = useState([]);
 
     useEffect(() => {
-        axios.get('https://frozen-harbor-02472.herokuapp.com/venue')
+        axios.get('venue.json')
             .then((response) => {
                 setVenue([...response.data]);
             });

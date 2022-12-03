@@ -10,7 +10,7 @@ export function PlayerCard() {
 
     useEffect(() => {
         axios
-            .get(`https://frozen-harbor-02472.herokuapp.com/stats`)
+            .get(`stats.json`)
             .then((res) => {
                 let output = [...res.data]
                 output.forEach((item) => {

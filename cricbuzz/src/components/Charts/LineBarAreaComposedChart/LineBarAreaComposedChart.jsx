@@ -17,12 +17,16 @@ export function LineBarAreaComposedChart() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://frozen-harbor-02472.herokuapp.com/radial`)
+    axios.get(`radial.json`)
       .then((res) => {
         console.log(res.data);
         setData(...[res.data]);
       })
   }, []);
+
+  const handleLabel = () => {
+    return ""
+  }
 
   return (
     <>
@@ -33,6 +37,7 @@ export function LineBarAreaComposedChart() {
           innerRadius={75}
           outerRadius={120}
           dataKey="value"
+          label={handleLabel}
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />

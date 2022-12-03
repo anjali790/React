@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell } from "recharts";
 import axios from "axios";
-// import image from "../Pie/virat.jpeg";
 import "./pieChart.css";
 
 const colors = [
@@ -17,7 +16,7 @@ export function LineBarAreaComposedChart() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://frozen-harbor-02472.herokuapp.com/radial`)
+    axios.get(`radial.json`)
       .then((res) => {
         console.log(res.data);
         setData(...[res.data]);

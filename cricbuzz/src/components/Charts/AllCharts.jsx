@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 import { BarCharts } from '../Chart/BarChart/BarChart';
+import { PercentageStackedAreaChart } from '../Chart/PercentageStackedAreaChart/PercentageStackedAreaChart';
 import { LineBarAreaComposedChart } from './LineBarAreaComposedChart/LineBarAreaComposedChart';
 import { SimpleRadarChart } from '../Chart/SimpleRadarChart/SimpleRadarChart';
-import { PercentageStackedAreaChart } from '../Chart/PercentageStackedAreaChart/PercentageStackedAreaChart';
 import { Item } from '../Dashboard/ConstData';
 
 import './allcharts.css';
