@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell } from "recharts";
 import axios from "axios";
-// import image from "../Pie/virat.jpeg";
 import "./pieChart.css";
 
 const colors = [
