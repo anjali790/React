@@ -3,8 +3,9 @@ import { SearchOutlined } from "@ant-design/icons";
 import { Button, Input, Space, Table, Checkbox } from "antd";
 import Highlighter from "react-highlight-words";
 
-import './table.css';
 import { data } from './data';
+
+import './table.css';
 
 export function ReactTable() {
   const [count, setCount] = useState(0);
@@ -143,6 +144,12 @@ export function ReactTable() {
     {
       title: 'Action',
       dataIndex: 'action',
+      render: (_, data) =>
+        <button onClick={() => handleDelete(data.key)} className="delete-btn">Delete</button>
+    },
+    {
+      title: 'Data',
+      dataIndex: 'data',
       render: (_, data) =>
         <button onClick={() => handleDelete(data.key)} className="delete-btn">Delete</button>
     },
