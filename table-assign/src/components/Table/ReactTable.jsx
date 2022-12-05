@@ -4,20 +4,11 @@ import { Button, Input, Space, Table, Checkbox } from "antd";
 import Highlighter from "react-highlight-words";
 
 import './table.css';
+import { data } from './data';
 
 export function ReactTable() {
-  const [count, setCount] = useState(2);
-  const [tabledata, setTabledata] = useState(
-    [
-      {
-        checkbox: <Checkbox value="checkbox"></Checkbox>,
-        key: "1",
-        name: "Anjali",
-        branch: "EE",
-        address: "New Delhi",
-      },
-    ]);
-
+  const [count, setCount] = useState(0);
+  const [tabledata, setTabledata] = useState("")
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
   const searchInput = useRef(null);
@@ -79,12 +70,9 @@ export function ReactTable() {
       </div>
     ),
     filterIcon: (filtered) => (
-      <SearchOutlined
-        style={{
-          color: filtered ? "#1890ff" : undefined,
-        }}
-      />
+      <SearchOutlined />
     ),
+
     onFilter: (value, record) =>
       record[dataIndex].toString().toLowerCase().includes(value.toLowerCase()),
     onFilterDropdownOpenChange: (visible) => {
@@ -95,10 +83,6 @@ export function ReactTable() {
     render: (text) =>
       searchedColumn === dataIndex ? (
         <Highlighter
-          highlightStyle={{
-            backgroundColor: "#ffc069",
-            padding: 0,
-          }}
           searchWords={[searchText]}
           autoEscape
           textToHighlight={text ? text.toString() : "not found"}
@@ -107,7 +91,6 @@ export function ReactTable() {
         text
       ),
   });
-
 
   const handleDelete = (key) => {
     const newData = tabledata.filter((item) => item.key !== key);
@@ -166,15 +149,18 @@ export function ReactTable() {
   ];
 
   const handleAddRow = () => {
-    const newData = {
-      checkbox: <Checkbox value="checkbox"></Checkbox>,
-      key: `${count}`,
-      name: `Aarav ${count}`,
-      branch: 'CSE',
-      address: `Delhi ${count}`,
+    const { key, checkbox, name, branch, address } = data[count]
+    const addRowData = {
+      checkbox,
+      key,
+      name,
+      branch,
+      address,
     };
-    setTabledata([...tabledata, newData]);
+
+    setTabledata([...tabledata, addRowData]);
     setCount(count + 1);
+
   };
 
   return (
