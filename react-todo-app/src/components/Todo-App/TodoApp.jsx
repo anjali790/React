@@ -1,8 +1,18 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react';
+
+const getData = () =>{
+    let list = localStorage.getItem('list');
+    if(list){
+        return JSON.parse(localStorage.getItem('list'))
+    }else{
+        return [];
+    }
+}
 
 export function TodoApp() {
     const [inputData, setInputData] = useState('');
-    const [item, setItem] = useState([]);
+    const [item, setItem] = useState(getData());
 
     const addItem = () => {
         if (inputData) {
@@ -21,6 +31,10 @@ export function TodoApp() {
     const removeAll = () => {
         return setItem([]);
     }
+
+    useEffect(()=>{
+        localStorage.setItem('list', JSON.stringify(item));
+    },[item]);
 
     return (
         <>
