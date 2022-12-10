@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 
-const getData = () =>{
+const getData = () => {
     let list = localStorage.getItem('list');
-    if(list){
+    if (list) {
         return JSON.parse(localStorage.getItem('list'))
-    }else{
+    } else {
         return [];
     }
 }
@@ -32,9 +32,9 @@ export function TodoApp() {
         return setItem([]);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         localStorage.setItem('list', JSON.stringify(item));
-    },[item]);
+    }, [item]);
 
     return (
         <>
