@@ -19,16 +19,16 @@ export function Memo() {
         return counterOne % 2 === 0;
     }, [counterOne])
 
-    // const isEven = () => {
-    //     console.log('even fn')
-    //     let i = 0;
-    //     while (i < 1000000) i++;
-    //     return counterOne % 2 === 0;
-    // };
+    const Even = () => {
+        console.log('even fn')
+        let i = 0;
+        while (i < 1000000) i++;
+        return counterOne % 2 === 0;
+    };
 
     return (
         <>
-            {/* <h1>counterOne- {counterOne} -{isEven() ? 'EVEN' : 'ODD'}</h1> */}
+            <h1>counterOne- {counterOne} -{Even() ? 'EVEN' : 'ODD'}</h1>
             <h1>counterOne- {counterOne} - {isEven ? 'EVEN' : 'ODD'}</h1>
             <h1>counterTwo- {counterTwo}</h1>
             <button onClick={incrementOne}>increment CounterOne</button>
