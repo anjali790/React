@@ -8,8 +8,7 @@ export function Counter() {
     }
 
     const handleDecrement = () => {  
-        // setCounter([...counter.slice(0, counter.length - 1)]);
-        setCounter([...counter.splice(counter.length-1,1)])
+        setCounter([...counter.slice(0, counter.length - 1)]);
     }
    
 
