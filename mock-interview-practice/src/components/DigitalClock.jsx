@@ -6,21 +6,21 @@ let currentTime = new Date().toLocalTimeString
 
 export function DigitalClock() {
     const [time, setTime] = useState(currentTime);
-    let interval;
+    const [show, setToggleShow] = useState(true);
 
-    interval = setInterval(() => {
+    setInterval(() => {
         currentTime = new Date().toLocaleTimeString()
         setTime(currentTime);
     }, 1000);
 
-    const handleStop = () => {
-        clearInterval(interval);
+    const handleToggleShow = () => {
+        setToggleShow(!show);
     }
 
     return (
         <>
-            <h1>{time}</h1>
-            <button onClick={handleStop}>Stop</button>
+            <button onClick={handleToggleShow}>{show ? "hide" : "show"}</button>
+            {show && <h1>{time}</h1>}
         </>
     )
 }
