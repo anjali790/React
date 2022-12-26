@@ -6,15 +6,21 @@ let currentTime = new Date().toLocalTimeString
 
 export function DigitalClock() {
     const [time, setTime] = useState(currentTime);
+    let interval;
 
-    setInterval(() => {
+    interval = setInterval(() => {
         currentTime = new Date().toLocaleTimeString()
         setTime(currentTime);
     }, 1000);
 
+    const handleStop = () => {
+        clearInterval(interval);
+    }
+
     return (
         <>
             <h1>{time}</h1>
+            <button onClick={handleStop}>Stop</button>
         </>
     )
 }
