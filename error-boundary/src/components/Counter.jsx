@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export function Counter(props) {
-    // if (props.name === "anjali") {
+    // if (props.name === "Aarav") {
     //     throw new Error("Error in Counter");
     // }
 

@@ -17,7 +17,7 @@ export function ErrorBoundary() {
                 <Dummy country="russia" />
             </UIBackup>
             <UIBackup>
-                <Counter name="anjali"/>
+                <Counter name="Aarav"/>
             </UIBackup>
         </>
     )
