@@ -9,7 +9,6 @@ export function Footer() {
         currentTime = new Date().toLocaleTimeString();
         setTime(currentTime);
     }
-
     setInterval(timer, 1000);
 
     return (

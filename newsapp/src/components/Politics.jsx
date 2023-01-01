@@ -8,10 +8,9 @@ export function Politics() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        axios.get('https://newsapi.org/v2/everything?q=politics&from=2022-10-17&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f')
+        axios.get("https://newsapi-z4r7.onrender.com/news?q=politics")
             .then((response) => {
                 setNews([...response.data.articles])
-                // console.log(politics)
                 setLoading(true);
             });
     }, []);

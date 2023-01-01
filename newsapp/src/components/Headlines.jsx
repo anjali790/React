@@ -8,9 +8,9 @@ export function Headlines(props) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    axios.get('https://newsapi.org/v2/everything?q=tesla&from=2022-09-20&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f').then(resp => {
+
+    axios.get("https://newsapi-z4r7.onrender.com/news?q=everything").then(resp => {
       let filteredNews = resp.data.articles;
-      // console.log(filteredNews)
       if (props.search) {
         filteredNews = resp.data.articles.filter((datas) => {
           if (datas.title) {

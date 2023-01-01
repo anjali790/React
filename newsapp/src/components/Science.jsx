@@ -8,11 +8,9 @@ export function Science() {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        // axios.get(`https://newsapi.org/v2/everything?q=science&from=2022-09-19&sortBy=publishedAt&apiKey=46be7c2d81f5465e8318c9dfaebfd6fe`)
-            axios.get(`https://newsapi.org/v2/everything?q=science&from=2022-10-17&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
+        axios.get("https://newsapi-z4r7.onrender.com/news?q=science")
             .then((response) => {
                 setNews([...response.data.articles]);
-                // console.log(news)
                 setLoading(true);
             })
     }, []);
