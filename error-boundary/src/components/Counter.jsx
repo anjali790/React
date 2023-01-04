@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 
 export function Counter(props) {
-    // if (props.name === "Aarav") {
-    //     throw new Error("Error in Counter");
-    // }
-
     const [counter, setCounter] = useState(0);
 
     const handleIncrement = () => {
@@ -21,6 +17,7 @@ export function Counter(props) {
 
     return (
         <>
+            {props.name.map((value) => { return <h1>Hello</h1> })}
             <h1>counter - {counter}</h1>
             <button onClick={handleIncrement}>Increment</button>
             <button onClick={handleDecrement} disabled={counter === 0}>Decrement</button>
