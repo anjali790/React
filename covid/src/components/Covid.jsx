@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Covid.css';
 import axios from 'axios';
+
+import './Covid.css';
 
 export function Covid() {
   const [data, setData] = useState([]);
@@ -12,22 +13,17 @@ export function Covid() {
     axios.get('https://api.covid19api.com/summary')
       .then((response) => {
         setData([...response.data.Countries]);
-        setFilterData([data, ...response.data.Countries]);
-        // console.log(data);
+        setFilterData([...response.data.Countries]);
       });
   }, []);
 
   useEffect(() => {
     const filteredData = data.filter((datas) => {
       if (datas.Country) {
-        // console.log(search.toLowerCase())
-        // console.log(datas.Country.length)
-        // debugger
-
         return datas.Country.toLowerCase().includes(search.toLowerCase());
       }
     });
-    // console.log(filteredData);
+
     setFilterData(filteredData);
   }, [search]);
 
