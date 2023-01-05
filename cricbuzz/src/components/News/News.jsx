@@ -7,7 +7,7 @@ export function News() {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://newsapi.org/v2/everything?q=cricket&from=2022-11-22&sortBy=publishedAt&apiKey=e53ee295b9c7459da80e049c910e8e0f`)
+        axios.get("https://newsapi-z4r7.onrender.com/news?q=cricket")
             .then((response) => {
                 setNews([...response.data.articles]);
             });
