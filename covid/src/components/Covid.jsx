@@ -47,7 +47,7 @@ export function Covid() {
         </div>
         <h1>Covid 19 Live Data Update</h1>
         <div className='toggleDiv'>
-          <button className="btn" onClick={() => toggle()}>Toggle Mode</button>
+          <i className="fa-solid fa-moon icon" onClick={() => toggle()}></i>
         </div>
       </header>
       <main>

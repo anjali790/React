@@ -37,17 +37,11 @@ header h1 {
     color: white;
 }
 
-header .toggleDiv .btn {
-    width: 150px;
-    line-height: 1.5;
-    border: none;
+header .toggleDiv .icon {
     color: var(--btn-clr);
-    padding: 5px 0;
-    font-weight: bold;
-    background-color: var(--btn-bg-clr);
-    box-shadow: 3px 3px 3px black;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 26px;
+    margin-right: 10px;
 }
 
 
@@ -93,7 +87,7 @@ main .container .table tbody .data {
     --table-data-bg-clr: rgb(177, 241, 238);
     --table-data-clr: rgb(61, 60, 60);
     --btn-bg-clr: white;
-    --btn-clr: rgb(42, 205, 196);
+    --btn-clr: black;
 }
 
 .dark-mode {
@@ -105,5 +99,5 @@ main .container .table tbody .data {
     --table-data-bg-clr: #694c4c;
     --table-data-clr: #FFE4E1;
     --btn-bg-clr: white;
-    --btn-clr: black;
+    --btn-clr: white;
 }
