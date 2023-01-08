@@ -4,7 +4,7 @@ export function Counter() {
     const [counter, setCounter] = useState(0);
 
     const handleIncrement = () => {
-        setCounter(counter + 1);
+        setCounter((prev)=>prev+1);
     }
 
     const handleDecrement = () => {
@@ -14,6 +14,8 @@ export function Counter() {
     const handleReset = () => {
         setCounter(0);
     }
+
+    console.log("does not re-render the component when the browser is resized")
 
     return (
         <>
