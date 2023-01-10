@@ -10,7 +10,6 @@ root.render(
   <React.StrictMode>
     <CountStateProvider>
       <App />
-      {/* <App2/> */}
     </CountStateProvider>
   </React.StrictMode>
 );

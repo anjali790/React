@@ -7,7 +7,7 @@ export function ComponentA() {
 
     return (
         <>
-            <div className={count?'componentA': 'componentB'}>
+            <div className='componentA'>
                 <p>Component A</p>
                 <p>Count is: {count}</p>
             </div>
