@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 export class Count extends Component {
     constructor(props) {
         super(props)
@@ -8,7 +7,6 @@ export class Count extends Component {
             count: 0
         }
     }
-
 
     increment = () => {
         this.setState((prev) => ({
@@ -22,15 +20,13 @@ export class Count extends Component {
         }))
     }
 
-
-
-        render() {
-            return (
-                <>
-                    <h1>{this.state.count}</h1>
-                    <button onClick={this.increment}>Increment</button>
-                    <button onClick={this.decrement}>Decrement</button>
-                </>
-            )
-        }
+    render() {
+        return (
+            <>
+                <h1>{this.state.count}</h1>
+                <button onClick={this.increment}>Increment</button>
+                <button onClick={this.decrement}>Decrement</button>
+            </>
+        )
     }
+}
