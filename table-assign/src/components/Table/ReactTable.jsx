@@ -147,12 +147,12 @@ export function ReactTable() {
       render: (_, data) =>
         <button onClick={() => handleDelete(data.key)} className="delete-btn">Delete</button>
     },
-    {
-      title: 'Data',
-      dataIndex: 'data',
-      render: (_, data) =>
-        <button onClick={() => handleDelete(data.key)} className="delete-btn">Delete</button>
-    },
+    // {
+    //   title: 'Data',
+    //   dataIndex: 'data',
+    //   render: (_, data) =>
+    //     <button onClick={() => handleDelete(data.key)} className="delete-btn">Delete</button>
+    // },
   ];
 
   const handleAddRow = () => {
@@ -170,6 +170,20 @@ export function ReactTable() {
 
   };
 
+  const handleAddColumn = () => {
+    const data = {
+      title: "Roll",
+      dataIndex: "Roll",
+      key: "roll",
+      width: "18%",
+      ...getColumnSearchProps("roll"),
+      sorter: (a, b) => a.address.length - b.address.length,
+      sortDirections: ["descend", "ascend"],
+    }
+    columns.push([...columns, data])
+    console.log(data)
+  }
+
   return (
     <div className="tableContainer">
       <Button
@@ -179,6 +193,13 @@ export function ReactTable() {
           marginBottom: 16,
         }}
       >Add Row </Button>
+      <Button
+        onClick={handleAddColumn}
+        type="primary"
+        style={{
+          marginBottom: 16,
+        }}
+      >Add Column </Button>
       <Table columns={columns} dataSource={tabledata} />;
     </div>
   );
